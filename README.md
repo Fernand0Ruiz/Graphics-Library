@@ -17,14 +17,14 @@ Project is created with:
 
 ## Library Functions
   | Library Function | System Call(s) | Description |
-  | ------------ | ------------------- |
-  | void init_graphics() | open, ioctl, mmap |
-  | void exit_graphics() | ioctl |
-  | void clear_screen() | write |
-  | char getkey() | select, read |
-  | void sleep_ms(long ms) | nanosleep |
-  | void draw_pixel(int x, int y, color_t color) |  |
-  | void draw_rect(int x1, int y1, int width, int height, color_t c) |  |
+  | ------------ | ------------------- | ------------------- |
+  | void init_graphics() | open, ioctl, mmap | open, ioctl, mmap |
+  | void exit_graphics() | ioctl | open, ioctl, mmap |
+  | void clear_screen() | write | open, ioctl, mmap |
+  | char getkey() | select, read | open, ioctl, mmap |
+  | void sleep_ms(long ms) | nanosleep | open, ioctl, mmap |
+  | void draw_pixel(int x, int y, color_t color) |  | open, ioctl, mmap |
+  | void draw_rect(int x1, int y1, int width, int height, color_t c) |  | open, ioctl, mmap |
   | void draw_text(int x, int y, const char *text, color_t c) |  |
 	
 ## Run Config
