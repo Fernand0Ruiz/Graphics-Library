@@ -10,10 +10,8 @@ Graphics library in C that employs only Linux system calls to accomplish the tas
 
 ## Technologies
 Project is created with:
-* Eclipse IDE 2019-12 (http://www.eclipse.org/downloads/)
-* Java version: JDK 8 (https://adoptopenjdk.net/)
-* JRE version: 1.8.0
-* JUnit version: 5.6.0
+* 
+* 
 
 ## Library Functions
 
