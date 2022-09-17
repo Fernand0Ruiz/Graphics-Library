@@ -23,7 +23,7 @@ Project is created with:
   | void exit_graphics() | ioctl, munmap, close | closes graphics device and re-enables keypresses |
   | void clear_screen() | write | clears the console of all input and output |
   | char getkey() | select, read | reads an user inputed single character  |
-  | void sleep_ms(long ms) | nanosleep, exit | open, ioctl, mmap |
+  | void sleep_ms(long ms) | nanosleep, exit |  makes the program sleep between frames of graphics being drawn |
   | void draw_pixel(int x, int y, color_t color) |  | draws a pixel on the screen |
   | void draw_rect(int x1, int y1, int width, int height, color_t c) |  | uses the function draw_pixel() to create a rectangle with the parameters for its location and dimension |
   | void draw_text(int x, int y, const char *text, color_t c) |  | draws text using the included apple font |
