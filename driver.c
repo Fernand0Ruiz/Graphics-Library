@@ -2,8 +2,7 @@
 * File:    driver.c
 * Date:    February 1, 2022
 * Author:  Fernando Ruiz 
-* Purpose: The following program uses an idea from square.c but with text and the
-* trick that you can appear to erase the text on the screen.
+* Purpose: The following program is to test the created library functions.
 */
 
 
