@@ -16,15 +16,16 @@ Project is created with:
 * JUnit version: 5.6.0
 
 ## Library Functions
+
   | Library Function | System Call(s) | Description |
   | ------------ | ------------------- | ------------------- |
-  | void init_graphics() | open, ioctl, mmap | open, ioctl, mmap |
-  | void exit_graphics() | ioctl | open, ioctl, mmap |
-  | void clear_screen() | write | open, ioctl, mmap |
+  | void init_graphics() | open, ioctl, mmap, exit | opens graphics device and disables keypresses |
+  | void exit_graphics() | ioctl, munmap, close | closes graphics device and re-enables keypresses |
+  | void clear_screen() | write | clears the console of all input and output |
   | char getkey() | select, read | open, ioctl, mmap |
-  | void sleep_ms(long ms) | nanosleep | open, ioctl, mmap |
-  | void draw_pixel(int x, int y, color_t color) |  | open, ioctl, mmap |
-  | void draw_rect(int x1, int y1, int width, int height, color_t c) |  | open, ioctl, mmap |
-  | void draw_text(int x, int y, const char *text, color_t c) |  |
+  | void sleep_ms(long ms) | nanosleep, exit | open, ioctl, mmap |
+  | void draw_pixel(int x, int y, color_t color) |  | draws a pixel on the screen |
+  | void draw_rect(int x1, int y1, int width, int height, color_t c) |  | uses the function draw_pixel() to create a rectangle with the parameters for its location and dimension |
+  | void draw_text(int x, int y, const char *text, color_t c) |  | draws text using the included apple font |
 	
 ## Run Config
