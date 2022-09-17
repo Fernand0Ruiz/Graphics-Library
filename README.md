@@ -2,17 +2,11 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
 * [Library Functions](#library-functions)
 * [Set Up / Run Config](#Set-Up-/-Run-Config)
 
 ## General info
 Graphics library in C that employs only Linux system calls to accomplish the task of setting pixel colors, drawing rectangles, reading key presses, and writing text in Apple font.
-
-## Technologies
-Project is created with:
-* 
-* 
 
 ## Library Functions
 
@@ -28,5 +22,5 @@ Project is created with:
   | void draw_text(int x, int y, const char *text, color_t c) |  | draws text using the included apple font |
 	
 ## Set Up / Run Config
-
-[csc452-spring2022-project1 (2).pdf](https://github.com/Fernand0Ruiz/Graphics-Library/files/9592755/csc452-spring2022-project1.2.pdf)
+Listed on assignment PDF below, see page 5-6.  
+[project.pdf](https://github.com/Fernand0Ruiz/Graphics-Library/files/9592768/project.pdf)
